@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Bitter;
+}
+
+.root{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 33rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    border-radius: .9375rem;
+    box-shadow: 0px 0px 30px 0.3px rgba(0,0,0,0.4);
+
+ 
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div{
+    margin: 1rem;
+}
+input, textarea{
+    border:1px solid #333;
+    padding: .5rem;
+}
+button{
+    padding: 5px;
+    background-color: tomato;
+    color:white;
+    outline: none;
+    border: transparent;
+
+}
+
+@media screen and (max-width: 750px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}  
